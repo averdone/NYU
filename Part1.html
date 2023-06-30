@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML>
+
+<BODY>
+<H1> HW Part 1 </H1>
+<SCRIPT>
+  //document.write("");
+  document.write("<table border='3'> ");
+  document.write('<tr style="background-color:lightblue;"> <th> X  </th> <th> 1 </th> <th> 2 </th> <th> 3 </th> <th> 4 </th> <th> 5 </th></tr>');
+  document.write('<tr> <th style="background-color:lightblue;"> 1 </th>  <th> 1 </th> <th> 2 </th> <th> 3 </th> <th> 4 </th> <th> 5 </th></tr>');
+  document.write('<tr> <th style="background-color:lightblue;"> 2 </th>  <th> 2 </th> <th> 4 </th> <th> 6 </th> <th> 8 </th> <th> 10 </th></tr>');
+  document.write('<tr> <th style="background-color:lightblue;"> 3 </th>  <th> 3 </th> <th> 6 </th> <th> 9 </th> <th> 12 </th> <th> 15 </th></tr>');
+  document.write('<tr> <th style="background-color:lightblue;"> 4 </th>  <th> 4 </th> <th> 8 </th> <th> 12 </th> <th> 16 </th> <th> 20 </th></tr>');
+  document.write('<tr> <th style="background-color:lightblue;"> 5 </th>  <th> 5 </th> <th> 10 </th> <th> 15 </th> <th> 20 </th> <th> 25 </th></tr>');
+  document.write("</table>");
+</SCRIPT>
+
+<H1> HW Part 2 </H1>
+  <SCRIPT>
+    var int1 = 4;
+    var int2 = 10;
+    var result = int1 * int2;
+    document.write("Integer 1: " + int1);
+    document.write("<BR>");
+    document.write("Integer 2: " + int2);
+    document.write("<BR>");
+    document.write("Integer 1 * Integer 2 = " + result);
+    document.write("<BR>");
+  </SCRIPT>
+
+<H1> HW Part 3 </H1>
+    <SCRIPT>
+    var list =[2, 4, 6, 8, 10, 12, 14]
+    document.write("Created List: " + list);
+    document.write("<BR>");
+    document.write("Third Element is " + list[2]);
+    </SCRIPT>
+
+<H1> HW Part 4 </H1>
+    <SCRIPT>
+      var student = {name: "Anthony Verdone", id: 123456};
+      document.write("<BR>");
+      document.write(student.name + " ID Number: " + student.id);
+    </SCRIPT>
+
+<H1> HW Part 5 </H1>
+    <SCRIPT>
+      var item1 = {prod_code:21231, description: "apples", price: 3.0, quantity: 2};
+      var item2 = {prod_code:11768, description: "lemons", price: 4.0, quantity: 1};
+      var item3 = {prod_code:11001, description: "peppers", price: 11.50, quantity: 79};
+      var shoppingcart = [item1, item2, item3];
+      document.write(shoppingcart[2].quantity + " " + shoppingcart[2].description + ", ");
+      document.write(shoppingcart[2].price + " each, " + shoppingcart[2].prod_code + " code.");
+    </SCRIPT>
+
+</BODY>
+</HTML>

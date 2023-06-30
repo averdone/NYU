@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<HTML>
+<BODY>
+
+<script>//Helper Functions
+function getRand(max){
+  rand = Math.random() * max;
+  rand = Math.floor(rand) + 2;
+  return rand
+}
+</script>
+
+<H1> HW Part 1 </H1>
+<SCRIPT>
+  //document.write("");
+  document.write("<table border='3'> ");
+  for(i = 1; i < 10; i++){
+    document.write("<tr>");
+    document.write("<th>" + i + "</th>");
+    for(j = 1; j < 10; j++){
+      var product = i*j;
+      document.write("<td>" + product +   "</td>");
+    }
+    document.write("</tr>");
+  }
+  document.write("</table>");
+</SCRIPT>
+
+<H1> HW Part 2 </H1>
+  <SCRIPT>
+    var maxRow = getRand(9);
+    var maxCol = getRand(9);
+
+    document.write("<table border='3'> ");
+    for(i = 1; i < maxRow; i++){
+      document.write("<tr>");
+      document.write("<th>" + i + "</th>");
+      for(j = 1; j < maxCol; j++){
+        var product = i*j;
+        document.write("<td>" + product +   "</td>");
+      }
+      document.write("</tr>");
+    }
+    document.write("</table>");
+  </SCRIPT>
+
+<H1> HW Part 3 </H1>
+    <SCRIPT>
+    function buildtable(row, col){
+      document.write("<table border='3'> ");
+      for(i = 1; i < row; i++){
+        document.write("<tr>");
+        document.write("<th>" + i + "</th>");
+        for(j = 1; j < col; j++){
+          var product = i*j;
+          document.write("<td>" + product +   "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    }
+
+    //part 1 table
+    buildtable(10,10);
+
+    //part 2 table
+    buildtable(getRand(9), getRand(9));
+    </SCRIPT>
+
+<BODY>
+</HTML>
